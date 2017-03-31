@@ -1,0 +1,26 @@
+{
+  "name": "cmasnap.com",
+  "version": "1.0.0",
+  "description": "CMAsnap web site",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -a localhost -p 8000 -c-1 ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/valuease/cmasnap.com.git"
+  },
+  "keywords": [
+    "cma"
+  ],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/valuease/cmasnap.com#readme"
+}

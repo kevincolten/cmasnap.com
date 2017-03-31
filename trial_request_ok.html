@@ -26,6 +26,9 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
 if (fbPixelId !== '') {
 fbq('init', fbPixelId);
 fbq('track', 'PageView');
+fbq('track', 'Lead', {
+    content_name: 'SubmittedLicenseNo'
+});
 }
 </script>
 <noscript><img height="1" width="1" style="display:none"
@@ -285,9 +288,9 @@ h1.title {
          </ul>
          <ul class="nav navbar-nav navbar-right">
            <li><a href="https://cmasnap.com/login">Login</a></li>
-           <li><a href="/#about">About</a></li>
-           <li><a href="/#services">Services</a></li>
-           <li><a href="/#pricing">Pricing</a></li>
+           <li><a href="index.html#about">About</a></li>
+           <li><a href="index.html#services">Services</a></li>
+           <li><a href="index.html#pricing">Pricing</a></li>
          </ul>
        </div>
      </div>
