@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CMA Snap Start</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="pkg/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="pkg/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="pkg/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+<link href="css/cmasnap.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="pkg/html4shiv/3.7.2/html5shiv.min.js"></script>
+<script src="pkg/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+var mixpanelToken = '007bfba6ae11aef6e98cc4a796db9a48';
+var fbPixelId = '169105323585037';
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+if (fbPixelId !== '') {
+fbq('init', fbPixelId);
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', {
+    content_name: 'HomePage'
+});
+}
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=169105323585037&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- start Mixpanel -->
+<script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init(mixpanelToken);</script>
+<!-- end Mixpanel -->
+<script src="js/mixpanel-js-error.js"></script>
+</head>
+<style>
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.topnav {
+    font-size: 14px;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(pkg/landing2/img/idevice.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #d5c0ac;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 300px;
+    border-top: 3px solid #080400;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(pkg/landing2/img/door1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+.fa-facebook-square{background-color:#3C599F;}
+</style>
+<body>
+
+<div id="navbar"></div>
+
+    <!-- Header -->
+
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="intro-message">
+                        <h1>CMAsnap</h1>
+                        <h3>Save time. Make money.</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="https://cmasnap.com/login" class="btn btn-primary btn-lg"><span class="network-name">Login</span></a>&nbsp;&nbsp;<a href="/user/trial_request_form" class="btn btn-primary btn-lg cma-request-access"><span class="network-name">Request a Trial</span></a>
+                            </li>
+                         </ul>
+                         <hr class="intro-divider">
+                         <br/>
+                         <ul class="list-inline intro-social-buttons">
+                            <li><a href="https://twitter.com/cmasnap" target="_blank" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;<a href="https://www.facebook.com/cmasnap" target="_blank" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;<a href="mailto:info@cmpsnap.com" class="btn btn-social-icon btn-facebook"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+        <a name="about"></a>
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                  <h2 class="section-heading">What is CMAsnap?</h2>
+                  <div class="embed-responsive embed-responsive-16by9" style="margin-top: 60px;">
+                      <iframe src="https://player.vimeo.com/video/177416096" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                </div>
+            </div>
+        <a  name="services"></a>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <div>
+                        <a href="#" class="btn btn-primary btn-lg cma-request-access"><span class="network-name">Request a Trial</span></a>
+                    </div>
+                    <h2 class="section-heading">Fast, accurate, mobile friendly</h2>
+                    <p class="lead">Never say "Let me go back to the office to pull the comps" again! <a href="#" class="cma-request-access">CMAsnap</a> lets you run fast and accurate Comparative Market Analysis on the spot. Smart phone, tablet, laptop, desktop. CMAsnap is wherever you are.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="pkg/landing2/img/realtorphone.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+     <a  name="pricing"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">How much does it cost?<br><br>You probably spend more on coffee!<br></h2>
+                    <p class="lead">Unlimited access is just $9.99 per month or $99 per year! </p>
+<!--
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Built in Texas<br>for Texas REALTORS<sup>&reg</sup><br></h2>
+                    <p class="lead">Comparative Market Analysis is a requirement of the job. Save time. Make money. With <a href="#" class="cma-request-access">CMAsnap.</a> </p>
+-->
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="pkg/landing2/img/coffee.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <!--  <a  name="pricing"></a> -->
+    <a  name="contact"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"><br><br><br><br><br><br></h2>
+                    <p class="lead"></p>
+
+                </div>
+                <div class="col-lg-6">
+                <!--
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://twitter.com/cmasnap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        </li>
+
+                    </ul>
+                 -->
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li><a href="#">Home</a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#about">About</a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#services">Services</a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <!--
+                        <li><a href="mailto:support@cmasnap.com">Contact</a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        -->
+                        <li><a href="https://twitter.com/cmasnap" target="_blank" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="https://www.facebook.com/cmasnap" target="_blank" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="mailto:info@cmpsnap.com" class="btn btn-social-icon btn-facebook"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; Valuease, Inc. 2016. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script id="nav-template" type="text/x-handlebars-template">
+  <nav class="navbar navbar-default navbar-fixed-top">
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#"><img src="images/cmasnap-251x50.png" style="max-height: 22px; max-width: 120px;" alt="CMAsnap"/></a>
+       </div>
+       <div class="navbar-collapse collapse">
+         <ul class="nav navbar-nav">
+         </ul>
+         <ul class="nav navbar-nav navbar-right">
+           <li><a href="https://cmasnap.com/login">Login</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#services">Services</a></li>
+           <li><a href="#pricing">Pricing</a></li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+</script>
+
+<script src="pkg/jquery/1.12.3/jquery.min.js"></script>
+<script src="pkg/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="pkg/handlebars/2.0.0/handlebars.js"></script>
+<script src="js/cmasnap.js"></script>
+
+<script>
+function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+$(document).ready(function() {
+
+    mixpanel.track('Landing Page');
+
+    var navTemplateSource = $("#nav-template").html();
+    var navTemplate = Handlebars.compile(navTemplateSource);
+    $('#navbar').empty().append(navTemplate());
+
+    $('.cma-request-accessOFF').click(function(e) {
+        e.preventDefault();
+        console.log('cma-request-access');
+        var licenseNumber = prompt('You must be a licensed member of your MLS to access CMAsnap. Please enter your TREC License#:','');
+        if (licenseNumber === null) {
+            console.log('licenseNumber is null');
+            return;
+        }
+        if (licenseNumber == '') {
+            console.log('licenseNumber is empty');
+            alert('Request not sent - no license number was entered');
+            return;
+        }
+        if (!isNumeric(licenseNumber)) {
+            alert('Request not sent. License number entered is not a valid number: ' + licenseNumber);
+            return;
+        }
+        var jsonReq = {"source": "Trial Request", "licenseNumber": licenseNumber};
+
+        $.postJSON('/api/v1/userinforequest', jsonReq, function(json) {
+            console.log('json.status=' + json.status);
+            if (json.status != 'success') {
+                console.log('status NOT success');
+                mixpanel.track('Trial Request - Error',{"error": json.message});
+                alert('Error: ' + response.message);
+            }
+            else {
+                mixpanel.track('Trial Request - Success',json.data);
+                alert('We got it - thanks! You will receive an email from us shortly with login instructions. Have a nice day!');
+            }
+        }, 'json')
+        .fail(function(xhr, textStatus, errorThrown) {
+            var response = jQuery.parseJSON(xhr.responseText);
+            mixpanel.track('Trial Request - Error',{"error": response.message});
+            alert('Error: ' + response.message);
+        });
+    });
+
+});
+</script>
+
+</body>
+</html>

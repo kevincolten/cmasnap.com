@@ -1,0 +1,42 @@
+  <nav class="navbar navbar-default navbar-fixed-top">
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="/page/home"><img src="/images/cmasnap-251x50.png" style="max-height: 22px; max-width: 120px;" alt="CMAsnap"/></a>
+       </div>
+       <div class="navbar-collapse collapse">
+         <ul class="nav navbar-nav">
+           <li class="{{#if active_home}}active{{/if}} home"><a href="/page/home">Dashboard</a></li>
+           <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support <span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+               <li><a href="/page/support_faq">FAQ</a></li>
+               <li><a href="/page/support_form">Contact Support</a></li>
+             </ul>
+           </li>
+           {{#if user.showAdminMenu}}
+           <li><a href="/admin">Admin</a></li>
+           {{/if}}
+           {{#if user.showSuperuserMenu}}
+           <li><a href="/superuser">Superuser</a></li>
+           {{/if}}
+         </ul>
+         <ul class="nav navbar-nav navbar-right">
+           <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome, {{user.firstName}} <span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+               <li><a href="/page/user_change_password">Change Password</a></li>
+               <li><a href="/page/user_profile">User Profile</a></li>
+               <li><a href="/page/pay_detail">Payment Info</a></li>
+               <li role="separator" class="divider"></li>
+               <li><a href="/logout">Logout</a></li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>

@@ -1,0 +1,40 @@
+body {
+  padding-top: 50px;
+}
+
+.img-center {
+  margin:0 auto;
+}
+
+tr.nowrap {
+white-space: nowrap;
+}
+
+.form-horizontal .form-group {
+  margin-bottom: 5px;
+}
+
+.form-horizontal .help-block {
+  margin-bottom: 5px;
+}
+
+.spacer {
+  margin-top: 20px; /* define margin as you see fit */
+}
+
+.spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px; /* half width of the spinner gif */
+    margin-top: -50px; /* half height of the spinner gif */
+    text-align:center;
+    z-index:1234;
+    overflow: auto;
+    width: 100px; /* width of the spinner gif */
+    height: 102px; /*hight of the spinner gif +2px to fix IE8 issue */
+}
+
+.btn-primary { background-color: #14b41c; }
+.btn-primary:hover { background-color: #119d18; }
+.btn-primary:visited { background-color: #119d18; }
