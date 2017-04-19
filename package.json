@@ -18,7 +18,8 @@
     "url": "git+ssh://git@bitbucket.org/valuease/cmasnap.com.git"
   },
   "keywords": [
-    "cma"
+    "cma",
+    "home"
   ],
   "author": "",
   "license": "ISC",
