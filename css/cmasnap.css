@@ -35,6 +35,49 @@ white-space: nowrap;
     height: 102px; /*hight of the spinner gif +2px to fix IE8 issue */
 }
 
-.btn-primary { background-color: #14b41c; }
-.btn-primary:hover { background-color: #119d18; }
-.btn-primary:visited { background-color: #119d18; }
+.btn-primary { 
+background-color: #f4511e; 
+transition: all 0.3s;
+border: none;
+}
+.btn-primary:hover { background-color: #D93B0B;}
+.btn-primary:visited { background-color: #f4511e; }
+
+.btn2-primary { 
+background-color: #14b41c; 
+transition: all 0.3s;
+border: none;
+}
+.btn2-primary:hover { background-color: #119d18;}
+.btn2-primary:visited { background-color: #119d18; }
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 10px 27px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding-top: 10px;
+}
+.embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding-top: 10px;
+}
+.embed-responsive {
+position: static;

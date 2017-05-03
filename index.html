@@ -84,8 +84,8 @@ h6 {
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .intro-message > h1 {
@@ -130,14 +130,15 @@ h6 {
 
 .network-name {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     letter-spacing: 2px;
+	line-height: 30px;
 }
 
 .content-section-a {
     padding: 50px 0;
-    background-color: #d5c0ac;
+    background-color: rgba(182, 206, 226, 0.2);
 }
 
 .content-section-b {
@@ -147,7 +148,7 @@ h6 {
 }
 
 .section-heading {
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
 
 .section-heading-spacer {
@@ -157,7 +158,7 @@ h6 {
 }
 
 .banner {
-    padding: 100px 0;
+    padding: 50px 0;
     color: #f8f8f8;
     background: url(pkg/landing2/img/door1.jpg) no-repeat center center;
     background-size: cover;
@@ -220,8 +221,8 @@ p.copyright {
 
     <!-- Header -->
 
-    <div class="intro-header">
-        <div class="container">
+    <div class="intro-header" style="height: 500px;">
+      <div class="container">
 
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -229,15 +230,16 @@ p.copyright {
                         <h1>CMAsnap</h1>
                         <h3>Save time. Make money.</h3>
                         <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
+                      <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="https://cmasnap.com/login" class="btn btn-primary btn-lg"><span class="network-name">Login</span></a>&nbsp;&nbsp;<a href="trial_request_form.html" class="btn btn-primary btn-lg cma-request-access"><span class="network-name">Request a Trial</span></a>
-                            </li>
+                              <a href="user/trial_request_form" class="btn btn-primary btn-lg cma-request-access"><span class="network-name">Request a Trial</span></a>
+                          </li>
                          </ul>
-                         <hr class="intro-divider">
-                         <br/>
+                        <span style="font-weight: normal; color: #E5E5E5; text-shadow: 1px 1px 8px #000000;">Already a Member?</span> <a href="https://cmasnap.com/login" style="color: #5F9ED3; font-weight: normal; text-decoration: underline;">Login</a>
+                        <hr class="intro-divider">
+                      <br/>
                          <ul class="list-inline intro-social-buttons">
-                            <li><a href="https://twitter.com/cmasnap" target="_blank" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;<a href="https://www.facebook.com/cmasnap" target="_blank" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;<a href="mailto:info@cmasnap.com" class="btn btn-social-icon btn-facebook"><i class="fa fa-envelope"></i></a></li>
+                            <li><a href="https://twitter.com/cmasnap" target="_blank" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;<a href="https://www.facebook.com/cmasnap" target="_blank" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;<a href="contact" class="btn btn-social-icon btn-facebook"><i class="fa fa-envelope"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -255,15 +257,21 @@ p.copyright {
     <div class="content-section-a">
 
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-sm-12 col-xs-12">
-                  <h2 class="section-heading">What is CMAsnap?</h2>
-                  <div class="embed-responsive embed-responsive-16by9" style="margin-top: 60px;">
+          <div class="row">
+              <div class="col-lg-5 col-sm-6">
+                    <h2 class="section-heading">What is CMAsnap?</h2>
+                    <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                    <p class="lead">CMAsnap lets REALTORS<sup>&reg</sup> produce a branded, accurate one page CMA from anywhere, on any device in a fraction of the time it takes using the MLS. Simply enter the subject property address and get a full comp set in under 10 seconds. Choose the most appropriate comps from the list and CMAsnap does the rest.</p>
+                    <p class="lead">Request a free trial today or <a href="contact">contact us</a> to learn more.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <div class="embed-responsive embed-responsive-16by9" style="margin-top: 25px;">
                       <iframe src="https://player.vimeo.com/video/177416096" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                   </div>
                 </div>
-            </div>
-        <a  name="services"></a>
+          </div>
+
         </div>
         <!-- /.container -->
 
@@ -276,55 +284,85 @@ p.copyright {
 
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                  <h2>What Our Clients Have to Say<br>
+                  <span style="font-size: 18px;">Keller Williams Agents on CMAsnap</span></h2>
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <div>
-                        <a href="#" class="btn btn-primary btn-lg cma-request-access"><span class="network-name">Request a Trial</span></a>
-                    </div>
-                    <h2 class="section-heading">Fast, accurate, mobile friendly</h2>
-                    <p class="lead">Never say "Let me go back to the office to pull the comps" again! <a href="#" class="cma-request-access">CMAsnap</a> lets you run fast and accurate Comparative Market Analysis on the spot. Smart phone, tablet, laptop, desktop. CMAsnap is wherever you are.</p>
+                    <p class="lead">We're proud to give the best possible service available to the clients we serve. Take a look at this video testimonial, and hear how CMAsnap is making a difference for KW agents, helping them save time and produce more!</p>
+                    <p class="lead">You too can benefit. <a href="user/trial_request_form">Request your free trial</a> today.</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="pkg/landing2/img/realtorphone.jpg" alt="">
+                    <div class="embed-responsive embed-responsive-16by9" style="margin-top: 25px;">
+                      <iframe src="https://player.vimeo.com/video/193915604" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
                 </div>
             </div>
 
         </div>
         <!-- /.container -->
-
+<a  name="services"></a>
     </div>
     <!-- /.content-section-b -->
 
-     <a  name="pricing"></a>
     <div class="content-section-a">
+
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-5 col-sm-6">
+                    <h2 class="section-heading">Fast, accurate, mobile friendly</h2>
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <p class="lead">Never say "Let me go back to the office to pull the comps" again! CMAsnap lets you run fast and accurate Comparative Market Analysis, including adjustments and market analysis, on the spot. Smart phone, tablet, laptop, desktop. CMAsnap is wherever you are.</p>
+                    <p class="lead">The time is now, <a href="user/trial_request_form">request your free trial</a> today.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="pkg/landing2/img/realtorphone.jpg" alt="">
+                  </div>
+                </div>
+          </div>
+<a  name="services"></a>
+        </div>
+        <!-- /.container -->
+<a  name="services"></a>
+    </div>
+    <!-- /.content-section-a -->
+
+     <a  name="pricing"></a>
+    <div class="content-section-b">
 
         <div class="container">
 
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">How much does it cost?<br><br>You probably spend more on coffee!<br></h2>
-                    <p class="lead">Unlimited access is just $9.99 per month or $99 per year! </p>
+                    <img class="img-responsive" style="padding-top:30px" src="pkg/landing2/img/coffee.jpg" alt="">
+              </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                  <h2 style="margin-left: 50px">How much does it cost?<br>
+                    <span style="font-size: 18px;">Less than a few cups of your favorite coffee.</span></h2>
+                    
+                  <div style="padding: 10px; margin-left: 60px;  width: 320px; height: 250px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; background-color: #FFFFFF; -webkit-box-shadow: #B3B3B3 3px 3px 3px; -moz-box-shadow: #B3B3B3 3px 3px 3px; box-shadow: #B3B3B3 3px 3px 3px; font-size: 46px; text-align: center; border-color:#607D8B; border-style:solid; border-width:2px;"><span style="font-size: 56px">$9<span style="font-size: 25px; vertical-align: super;">99</span></span><span style="font-size: 24px"> / Per Month</span><br>
+                  <p style="font-size: 20px;">Unlimited Access!</p>
+                  <p style="font-size: 14px;">Annual Plan For Only $99!</p>
+                  <div>
+                        <a href="user/trial_request_form" class="btn btn-primary btn-lg cma-request-access"><span class="network-name">Request a Trial</span></a>
+                  </div></div>
 <!--
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Built in Texas<br>for Texas REALTORS<sup>&reg</sup><br></h2>
                     <p class="lead">Comparative Market Analysis is a requirement of the job. Save time. Make money. With <a href="#" class="cma-request-access">CMAsnap.</a> </p>
 -->
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="pkg/landing2/img/coffee.jpg" alt="">
-                </div>
-            </div>
+          </div></div>
+      </div>
 
-        </div>
+</div>
         <!-- /.container -->
 
     </div>
-    <!-- /.content-section-a -->
 
-    <!--  <a  name="pricing"></a> -->
+    </div>
+    <!-- /.content-section-b -->
+    
     <a  name="contact"></a>
     <div class="banner">
 
@@ -376,17 +414,17 @@ p.copyright {
                         <li class="footer-menu-divider">&sdot;</li>
                         <li><a href="#pricing">Pricing</a></li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        <!--
-                        <li><a href="mailto:support@cmasnap.com">Contact</a></li>
+                        <li><a href="contact">Contact</a></li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        -->
+                        <li><a href="https://cmasnap.com/login">Login</a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
                         <li><a href="https://twitter.com/cmasnap" target="_blank" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a></li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li><a href="https://www.facebook.com/cmasnap" target="_blank" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a></li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="mailto:info@cmasnap.com" class="btn btn-social-icon btn-facebook"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="contact" class="btn btn-social-icon btn-facebook"><i class="fa fa-envelope"></i></a></li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Valuease, Inc. 2016. All Rights Reserved</p>
+                    <p class="copyright text-muted small">Copyright &copy; Valuease, Inc. 2017. All Rights Reserved</p>
                 </div>
             </div>
         </div>
@@ -408,16 +446,16 @@ p.copyright {
          <ul class="nav navbar-nav">
          </ul>
          <ul class="nav navbar-nav navbar-right">
-           <li><a href="https://cmasnap.com/login">Login</a></li>
            <li><a href="#about">About</a></li>
            <li><a href="#services">Services</a></li>
            <li><a href="#pricing">Pricing</a></li>
+		   <li><a href="contact">Contact</a></li>
+           <li><a href="https://cmasnap.com/login">Login</a></li>
          </ul>
        </div>
      </div>
    </nav>
 </script>
-
 <script src="pkg/jquery/1.12.3/jquery.min.js"></script>
 <script src="pkg/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="pkg/handlebars/2.0.0/handlebars.js"></script>
